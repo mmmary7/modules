@@ -1,0 +1,8 @@
+p = input()
+f = open(p+'.txt', 'r')
+a = f.read()
+f.close()
+f = open('ff.txt', 'w')
+b, c = int(a.split()[0]), int(a.split()[1])
+f.write(str(b+c))
+f.close()
