@@ -3,16 +3,24 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+ # def print_hi(name):
+ #    # Use a breakpoint in the code line below to debug your script.
+ #    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# if __name__ == '__main__':
+#     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # cd .\advertisements\
 # py manage.py runserver
+for i in range(1000000, 2000000):
+    c=0
+    for a in range(1, i):
+        if (i/a == i//a) and (((i/a - a) < 100) or ((a - i/a)< 100) ):
+            c += 1
+            if c >= 3:
+                print(i)
+                break
+
